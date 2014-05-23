@@ -1,0 +1,14 @@
+{
+    "type": "Jade Template",
+    "extension": ["jade"],
+    "convert": [{
+	"name": "jade2html",
+	"path": "converts/jade.sh",
+	"output_file_extension": "html"
+    }],
+    "mapper": [{
+	"type": "*",
+	"init": "starts/default.jade",
+	"router": ["jade2html"]
+    }]
+}
